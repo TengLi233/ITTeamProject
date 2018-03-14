@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load staticfiles %}<!--new file-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>hot-pot</title>
+		<link rel="stylesheet" href="{% static 'style/css.css' %}" />
+	</head>
+	<body>
+		<div class="head"><!--使图片叠在后面 -->	
+          <a href="chinese"><div class="logo"><!--放到图标上呈现手型 --></div></a>
+           <div class="menu">	
+        	<ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="www.google.com">Message Board</a></li>
+                <li><a href="www.google.com">Booking</a></li>
+                <li><a href="www.google.com">Meun</a></li>
+            </ul>
+
+         </div>
+        </div>
+        <div class="instro"><p>aaaaaa</p></div>
+        <div class="main">
+        	<div class="what">
+        		<div class="text"><p style="text-align:justify; text-justify:inter-ideograph;">
+        			Hot pot is a Chinese soup containing a variety of East Asian
+					foodstuffs and ingredients, prepared with a simmering pot
+ 					of soup stock at the dining table. While the hot pot is kept
+					simmering, ingredients are placed into the pot and are cooked
+					 at the table. Typical hot pot dishes include thinly sliced
+					meat, leaf vegetables, mushrooms, wontons, egg dumplings
+					, tofu, and seafood. The cooked food is usually eaten with a
+					dipping sauce.</p></div>
+        	</div>
+        	<div class="view"><p style="color: white;">这里加Js滚动效果</p></div>
+        	<div class="show"><img src="{% static 'image/show.jpg' %}" width="600px"></div>
+        	<div class="price"><img src="% static 'image/price.jpg' %}" width="400px"></div>
+        
+        </div>
+        <div class="bottom">
+        	<p>CopyrRight © 2018 All Rights Reserved <a href="www.google.com">About</a> </p>
+        </div>
+        
+	</body>
+</html>

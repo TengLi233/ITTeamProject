@@ -1,0 +1,148 @@
+body{
+	background-color:#DDD;
+}
+
+.head{
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	height:98px;
+	background-image:url(../image/head.png);
+	background-repeat: no-repeat;
+}
+
+
+
+.logo{
+	position:absolute;
+	width:150px;
+	height:150px;
+}
+.menu{
+	position:absolute;
+	width:1000px; 
+	height:48px;
+	margin-top:50px;
+	margin-left: 0px;
+	background-color: rgb(70,42,30);
+}
+
+.menu ul{
+	margin:auto;
+	padding-left: 40;
+}
+.menu ul li{
+	list-style:none;
+	float:left;
+	padding-left: 20px;
+	width:170px;
+	height:48px;
+	line-height:48px;
+	color: white;
+	font-size:large;
+}
+.menu ul li a{
+	color:#FFFFFF;
+	text-decoration:none;
+	display:block;
+	height:48px;
+	text-align:center;
+}
+.menu ul li a:hover{
+	color:yellow;
+}
+.menu ul li a.over{
+	color:yellow;
+}
+
+.instro{
+    margin:0 auto;
+    margin-top: -20px;
+	width:1000px;
+	height: 180px;
+	background-image: url(../image/instro.jpg);
+	background-repeat: no-repeat;
+}
+
+.main{
+	margin:0 auto;
+	width:1000px;
+	height: 620px;
+	background-color: white;
+	background-repeat: no-repeat;
+}	
+
+.what{
+	float: left;
+	margin: auto;
+	width:700px;
+	height: 300px;
+	background-image: url(../image/what.jpg);
+	background-repeat: no-repeat;
+}
+
+.text{
+	margin-left: 270px;
+	width:320px;
+	height: 300px;
+	background-color: white;
+}
+
+.what{
+	float: left;
+	margin: auto;
+	width:700px;
+	height: 300px;
+	background-image: url(../image/what.jpg);
+	background-repeat: no-repeat;
+}
+
+
+.view{
+	float: left;
+	margin-left: 600px;
+	margin-top: -280px;
+	width:700px;
+	height: 300px;
+	background-image: url(../image/view.jpg);
+	background-repeat: no-repeat;
+}
+
+
+.show{
+	float: left;
+	margin: auto;
+	width:700px;
+	height: 300px;
+}
+
+.price{
+	float: left;
+	margin-left: 600px;
+	margin-top: -350px;
+	width:400px;
+	height: 300px;
+
+}
+
+
+.bottom{
+	margin:0 auto;
+	margin-top: -30px;
+	width:1000px;
+	height: 50px;
+	background-color: rgb(70,42,30) ;
+	text-align: center;
+	overflow:hidden;
+}
+
+.bottom p{
+	text-align: center;
+	color: white;
+	 overflow:hidden;
+}
+
+.bottom p a{
+	text-align: center;
+	color: white;
+}
