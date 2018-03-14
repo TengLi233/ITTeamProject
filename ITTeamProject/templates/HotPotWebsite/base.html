@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+ 	<head>
+		<meta charset="utf-8" />
+		<title>hot-pot</title>
+		<link rel="stylesheet" href="{% static 'style/css.css' %}" />
+	</head>
+	
+    <body>
+        <!-- Page specific content goes here -->
+		<div class="head"><!--使图片叠在后面 -->
+            <a href="chinese"><div class="logo"><!--放到图标上呈现手型 --></div></a>
+            <div class="menu">
+				<ul>
+					<li><a href="{% url 'index' %}">Home</a></li>
+					<li><a href="{% url 'message_board' %}">Message Board</a></li>
+					<li><a href="{% url 'book' %}">Booking</a></li>
+					<li><a href="{% url 'menu' %}">Meun</a></li>
+				</ul>
+			</div>
+        </div>
+		
+        <div>
+            {% block body_block %}
+            {% endblock %}
+        </div> 
+        <hr />
+        <div class="bottom">
+        	<p>CopyrRight © 2018 All Rights Reserved <a href="{% url 'about' %}">About</a> </p>
+        </div>
+    </body>
+</html>
