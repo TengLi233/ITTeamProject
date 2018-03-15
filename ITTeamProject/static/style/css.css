@@ -15,7 +15,8 @@ body{
 
 .logo{
 	position:absolute;
-	width:150px;
+	margin-left: 700px;
+	width:300px;
 	height:150px;
 }
 .menu{
@@ -34,8 +35,8 @@ body{
 .menu ul li{
 	list-style:none;
 	float:left;
-	padding-left: 20px;
-	width:170px;
+	padding-left: 10px;
+	width:140px;
 	height:48px;
 	line-height:48px;
 	color: white;

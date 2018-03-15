@@ -1,0 +1,19 @@
+{% extends 'HotPotWebsite/base.html' %}
+{% load staticfiles %}<!--new file-->
+
+{% block body_block %}
+    <h1>Join our website to be a VIP!</h1>
+    {% if registered %}
+        <strong>Thanks for your registering!</strong>
+        <a href="{% url 'index' %}">Return to the HomePage!</a>
+        <br/><br/>
+    {% else %}
+        <form id="user_form" method="post" action="{% url 'register' %}" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            {{user_form.as_p}}
+            {{profile_form.as_p}}
+            <input type="submit" name="submit" value="Register" />
+        </form>
+    {% endif %}
+{% endblock %}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load staticfiles %}
+{% load HotPotWebsite_template_tags %}
 
 <html>
  	<head>
@@ -11,17 +12,31 @@
     <body>
         <!-- Page specific content goes here -->
 		<div class="head"><!--使图片叠在后面 -->
-            <a href="chinese"><div class="logo"><!--放到图标上呈现手型 --></div></a>
+            <a href="chinese"></a>
+			<div class="logo">
+				{% if user.is_authenticated %}
+					<font size=1 face="Times" color="RED">
+						<h2>Welcome to our resterant, {{user.username}}!</h2>
+					</font>
+				{% endif %}
+				<!--放到图标上呈现手型 -->
+			</div>
             <div class="menu">
 				<ul>
 					<li><a href="{% url 'index' %}">Home</a></li>
 					<li><a href="{% url 'message_board' %}">Message Board</a></li>
 					<li><a href="{% url 'book' %}">Booking</a></li>
 					<li><a href="{% url 'menu' %}">Meun</a></li>
+					{% if user.is_authenticated %}
+						<li><a href="{% url 'logout' %}">Logout</a> </li>>
+					{% else %}
+						<li><a href="{% url 'login' %}">Login</a></li>
+					{% endif %}
+					<li><a href="{% url 'register' %}">Register</a></li>
 				</ul>
 			</div>
         </div>
-		
+
         <div>
             {% block body_block %}
             {% endblock %}

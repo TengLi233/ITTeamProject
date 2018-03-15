@@ -2,4 +2,13 @@
 {% load staticfiles %}<!--new file-->
 
 {% block body_block %}
+    <h1> Hello, welcome to the menu Page!</h1>
+
+        {% if categories %}
+            {% for category in categories %}
+                <li><a href="/HotPotWebsite/category/{{category.slug}}">{{category.name}}</a></li>
+            {% endfor %}
+        {% else %}
+            <strong> We do not want to open today! </strong>
+        {% endif %}
 {% endblock %}

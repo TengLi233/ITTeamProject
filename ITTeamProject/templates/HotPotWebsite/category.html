@@ -1,0 +1,21 @@
+{% extends 'HotPotWebsite/base.html' %}
+{% load staticfiles %}<!--new file-->
+
+{% block body_block %}
+    <h1> Hello, welcome to the menu Page!</h1>
+    {% if menucategory %}
+        <h1>{{menucategory.name}}</h1>
+        {% if dishes %}
+            <ul>
+                {% for dish in dishes %}
+                    <li><img src="{% static '/image/view.jpg' %}"></li>
+                    <li>{{dish.title}}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <strong>No dishes currently in category.</strong>
+        {% endif %}
+    {% else %}
+        <strong> Hello, welcome to the DongFeiDaLieGu! </strong>
+    {% endif %}
+{% endblock %}
