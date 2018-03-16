@@ -1,8 +1,11 @@
 {% extends 'HotPotWebsite/base.html' %}
 {% load staticfiles %}<!--new file-->
 
+{% block head_block %}
+    <link rel="stylesheet" href="{% static 'style/css.css' %}" />
+{% endblock %}
+
 {% block body_block %}
-	<div class="instro"><p>aaaaaa</p></div>
         <div class="main">
         	<div class="what">
         		<div class="text"><p style="text-align:justify; text-justify:inter-ideograph;">
@@ -22,7 +25,7 @@
 					<ul>
 						<li><img src="{% static 'image/show.jpg' %}" width="400px" height="240"></li>
 						<li><img src="{% static 'image/price.jpg' %}" width="400px" height="240"></li>
-						<li><img src="{% static 'image/show.jpg' %}" width="400px" height="240"></li>
+						<li><img src="{% static 'image/instro.jpg' %}" width="400px" height="240"></li>
 						<li><img src="{% static 'image/view.jpg' %}" width="400px" height="240"></li>
 					</ul>
 					<script>

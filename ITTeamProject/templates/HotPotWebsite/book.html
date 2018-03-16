@@ -1,6 +1,10 @@
 {% extends 'HotPotWebsite/base.html' %}
 {% load staticfiles %}<!--new file-->
 
+{% block head_block %}
+    <link rel="stylesheet" href="{% static 'style/css.css' %}" />
+{% endblock %}
+
 {% block body_block %}
     <br/>
     Choose a Data: <input type="date" name="date" />

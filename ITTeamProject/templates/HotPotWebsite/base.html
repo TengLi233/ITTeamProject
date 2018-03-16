@@ -6,7 +6,8 @@
  	<head>
 		<meta charset="utf-8" />
 		<title>hot-pot</title>
-		<link rel="stylesheet" href="{% static 'style/css.css' %}" />
+		{% block head_block %}
+		{% endblock %}
 	</head>
 	
     <body>
@@ -36,7 +37,7 @@
 				</ul>
 			</div>
         </div>
-
+		<div class="instro"><p>aaaaaa</p></div>
         <div>
             {% block body_block %}
             {% endblock %}

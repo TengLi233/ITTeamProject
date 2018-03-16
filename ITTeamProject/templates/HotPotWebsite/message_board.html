@@ -1,7 +1,12 @@
 {% extends 'HotPotWebsite/base.html' %}
 {% load staticfiles %}<!--new file-->
 
+{% block head_block %}
+    <link rel="stylesheet" href="{% static 'style/css.css' %}" />
+{% endblock %}
+
 {% block body_block %}
+<div class="mainBoard">
     <input type="text"  value="Please Enter Your Name!" size="69"/>
     <br/>
     <input type="text"  value="Please Enter Your Contact Infomation!" size="69"/>
@@ -13,4 +18,5 @@
     Submit: <input type="submit"></input>
     <br/>
     <br/>
+   </div>
 {% endblock %}
