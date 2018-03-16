@@ -1,0 +1,23 @@
+
+Superaccount：
+    user name: diao
+    password: dian12345
+    (注意: 密码是 'dian12345', 不是 'diao12345'.在注册的时候我打错了.)
+
+    book 和 message board我只是加了一些特别捞的东西，动态功能不太会做，还得靠小马哥，
+
+    注册和登录登出我倒是写好了，用户注册的时候要输入username，password，email（这三个是django自带的），
+    我还加了一个zipcode和headpicture，还有那个menu那边我照着葫芦画瓢弄了一个数据库，包括种类和其中的内容，
+    但是界面优化还是有些差，毕竟html弱鸡，到时候多搜集一点照片然后加上去，再弄一下排版。
+
+    关于css的一些假设，我把css链接直接加在html的父类里面了，那好像说明所有继承他的html类的css都只能是那个样子，
+    这样的话恐怕要给每个页面都写一个css，此处@群主。（css放在static文件夹下面的style）
+
+    JavaScript实现图片滚动未完成，在static文件夹下面有一个JavaScript文件夹，里面放的是js文件，那个是我在网上搜的代码，
+    说是能实现图片滚动，然而失败了，我可能再试一下会成功
+
+    另，上面这些功能实现之后恐怕还要加一个点菜的功能
+
+    总结：book， message board，点菜，和界面美观优化需要完成
+
+// 更新：图片滚动功能实现了

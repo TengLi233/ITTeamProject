@@ -103,11 +103,16 @@ body{
 	float: left;
 	margin-left: 600px;
 	margin-top: -280px;
-	width:700px;
+	width:400px;
 	height: 300px;
-	background-image: url(../image/view.jpg);
+	background:Black;
 	background-repeat: no-repeat;
 }
+
+*{ margin:0; padding:0; list-style:none;}
+#box{ width:380px; border:1px solid #000; height:240px; margin:0px auto; position:relative; overflow:hidden;}
+#box ul{ position:absolute; left:0; top:0;}
+#box ul li{ width:400px; height:300px; float:left; padding:5px;}
 
 
 .show{

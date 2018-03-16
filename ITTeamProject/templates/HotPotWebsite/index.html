@@ -15,22 +15,42 @@
 					, tofu, and seafood. The cooked food is usually eaten with a
 					dipping sauce.</p></div>
         	</div>
-        	<div id = "scroll_div" class="view">
-                <!--Javascript-->
-                <div id = "scroll_begin">
-                    <ul>
-                        <!--<li><img src="{% static 'image/show.jpg' %}" width="600px"> </li>-->
-                        <!--<li><img src="{% static 'image/price.jpg' %}" width="600px"> </li>-->
-                    </ul>
-                </div>
-            </div>
-            <div id="scroll_end"></div>
-            <script src = "{% static 'javascript/picturescroll.js' %}">
-                ScrollImgLeft();
-            </script>
 
+        	<div id = "scroll_div" class="view" onmousemove="clearMyVar()" onmouseout="mOut(this)">
+
+				<div id="box">
+					<ul>
+						<li><img src="{% static 'image/show.jpg' %}" width="400px" height="240"></li>
+						<li><img src="{% static 'image/price.jpg' %}" width="400px" height="240"></li>
+						<li><img src="{% static 'image/show.jpg' %}" width="400px" height="240"></li>
+						<li><img src="{% static 'image/view.jpg' %}" width="400px" height="240"></li>
+					</ul>
+					<script>
+					function myVar(){
+						var oBox=document.getElementById('box');
+						var oUl=oBox.children[0];
+						var aLi=oUl.children;
+
+						oUl.innerHTML+=oUl.innerHTML;
+						oUl.style.width=aLi.length*aLi[0].offsetWidth+'px';
+
+						setInterval(function(){
+							var l=oUl.offsetLeft+10;
+							if(l>=0){
+								l=-oUl.offsetWidth/2;
+							}
+							oUl.style.left=l+'px';
+						},150);
+					};
+					function clearMyVar(){
+						clearInterval(myVar);
+					};
+					window.onload=myVar;
+				</script>
+				</div>
+			</div>
         	<div class="show"><img src="{% static 'image/show.jpg' %}" width="600px"></div>
-        	<div class="price"><img src="% static 'image/price.jpg' %}" width="400px"></div>
+        	<div class="price"><img src="{% static 'image/price.jpg' %}" width="400px"></div>
 {% endblock %}
 
         
