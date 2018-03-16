@@ -7,16 +7,19 @@
 
 {% block body_block %}
 <div class="mainBoard">
+	<div class="boardText">
+		<h2>Get In Touch</h2>
+		<p style="color: rgba(0,0,0,0.5);">Inorder to get in touch use the contect form below</p>
     <input type="text"  value="Please Enter Your Name!" size="69"/>
-    <br/>
+    <br />
     <input type="text"  value="Please Enter Your Contact Infomation!" size="69"/>
-    <br/>
-    <textarea rows="10" cols="50">
-        Don't you want to say something?
+    <textarea rows="10" cols="65" style="background-color:gray;color:white; font-family: arial;">
+       write your message here..
     </textarea>
+    <br />
+    <input type="submit" value="SEND"   style="background-color: rgb(124,206,191);width: 70px; margin-top: 20px;"/>
     <br/>
-    Submit: <input type="submit"></input>
     <br/>
-    <br/>
-   </div>
+    </div>
+</div>
 {% endblock %}

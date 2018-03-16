@@ -6,6 +6,8 @@
 {% endblock %}
 
 {% block body_block %}
+<div class="mainBoard">
+	<div class="boardTextR">
     <h1>Join our website to be a VIP!</h1>
     {% if registered %}
         <strong>Thanks for your registering!</strong>
@@ -17,7 +19,9 @@
 
             {{user_form.as_p}}
             {{profile_form.as_p}}
-            <input type="submit" name="submit" value="Register" />
+            <input type="submit" value="REGISTER"   style="background-color: rgb(124,206,191);width: 70px; margin-top: 20px;"/>
         </form>
+    </div>
+</div>
     {% endif %}
 {% endblock %}

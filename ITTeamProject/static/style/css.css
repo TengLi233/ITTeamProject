@@ -157,5 +157,38 @@ body{
 	margin:0 auto;
 	width:1000px;
 	height: 620px;
-	background-color:yellow;
+	background-image: url(../image/boardbg.jpg);
+	background-size: 1000px 620px;
+}
+
+.boardText{
+	float: left;
+	margin-left: 100px;
+	margin-top: 70px;
+	width:600px;
+	height: 400px;
+}
+
+.boardText input{
+	margin-bottom: 20px;
+	background-color:gray;
+	color: white;
+	height: 40px;
+	width: 500px;
+}
+
+.boardTextR{
+	float: left;
+	margin-left: 100px;
+	margin-top: 70px;
+	width:600px;
+	height: 400px;
+}
+
+.boardTextR input{
+	margin-bottom: 20px;
+	background-color:gray;
+	color: white;
+	height: 20px;
+	width: 300px;
 }
